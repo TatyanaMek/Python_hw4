@@ -1,7 +1,15 @@
 # Задайте натуральное число N. 
 # Напишите программу, которая составит список простых множителей числа N.
 
-number=int(input("Необходимо ввести число: "))
-for i in range(1, number+1):
-    if(number%i==0):
-        print(i)
+
+
+number = int(input("Необходимо ввести число: "))
+spisok = []
+i = 2
+while i <= number:
+    if number % i == 0:
+        spisok.append(i)
+        number //= i
+    else:
+        i +=1
+print(spisok)

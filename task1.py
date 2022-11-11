@@ -3,7 +3,6 @@
 
 import math
 
-
 num = int(input('Введите число '))
 num = num + 2
 pi = str(math.pi)[0:num]
